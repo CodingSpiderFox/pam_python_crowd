@@ -1,7 +1,7 @@
 pam_python_crowd
 ================
 
-This is a mechanism for logging into a Linux computer using Atlassian's Crowd authentication server.  I've only really tested it on Ubuntu 13.10, although it *ought* to work on any PAM-based system.
+This is a mechanism for logging into a Linux computer using Atlassian's Crowd authentication server.  I've only really tested it on Ubuntu 16.04, although it *ought* to work on any PAM-based system.
 
 It's the result of a saturday's hacking, and is pretty much just a proof-of-concept, and probably ***Unwise to use in Production*** environments.
 
@@ -14,8 +14,8 @@ NOTE: If the user doesn't yet exist locally, it will be created -- however, it w
 Requirements
 ------------
 
-* pam_python (I used the version from the ubuntu repositories)
-* pam_exec (to run the script to add the user when they login the first time).
+* pam_python (I used the version from the ubuntu repositories, package: "python-pam")
+* pam_exec (package in ubuntu repositories: "libpam-modules"; to run the script to add the user when they login the first time).
 * Atlassian Crowd 2.1 (That's the version I used).
 
 1. Copy `usr/share/pam-configs/pam_config_python` into `/usr/share/pam-configs`
