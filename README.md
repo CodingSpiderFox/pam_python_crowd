@@ -16,7 +16,7 @@ Requirements
 
 * pam_python (I used the version from the ubuntu repositories, package: "python-pam")
 * pam_exec (package in ubuntu repositories: "libpam-modules"; to run the script to add the user when they login the first time).
-* Atlassian Crowd 2.1 (That's the version I used).
+* Atlassian Crowd 2.12.0 (That's the version I used).
 
 1. Copy `usr/share/pam-configs/pam_config_python` into `/usr/share/pam-configs`
 1. Create a generic Application in Crowd, remember the application name and password for the next step.
